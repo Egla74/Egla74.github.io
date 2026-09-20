@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Netflix Data Wrangling | Egla Chepkurgat</title>
+
+<link rel="stylesheet" href="../style.css">
+```
+
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+```
+    <h2 class="logo">Egla Chepkurgat</h2>
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="../index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="../index.html#about">About</a>
+        </li>
+
+        <li>
+            <a href="../index.html#projects">Projects</a>
+        </li>
+
+    </ul>
+
+</nav>
+```
+
+</header>
+
+<section class="section">
+
+```
+<h1>Netflix Data Wrangling</h1>
+
+<p>
+    A data-wrangling project focused on preparing a Netflix
+    dataset for further analysis using Python and Pandas.
+</p>
+
+
+<!-- OBJECTIVE -->
+
+<h2>Project Objective</h2>
+
+<p>
+    The objective of this project was to explore, structure,
+    clean, enrich and validate the Netflix dataset before
+    publishing the final cleaned dataset for future analysis.
+</p>
+
+
+<!-- TOOLS -->
+
+<h2>Tools Used</h2>
+
+<ul>
+    <li>Python</li>
+    <li>Pandas</li>
+    <li>NumPy</li>
+    <li>Kaggle Notebook</li>
+</ul>
+
+
+<!-- 1 DISCOVERY -->
+
+<h2>1. Discovery</h2>
+
+<p>
+    The Discovery stage focused on understanding the Netflix
+    dataset before making any changes.
+</p>
+
+<p>
+    The dataset was loaded into a Pandas DataFrame and inspected
+    using functions such as <code>head()</code>, <code>shape</code>,
+    <code>info()</code>, <code>describe()</code> and
+    <code>dtypes</code>.
+</p>
+
+<p>
+    Missing values and duplicate records were also investigated
+    to identify potential data-quality issues.
+</p>
+
+<p>
+    The analysis showed that <strong>director</strong>,
+    <strong>country</strong> and <strong>cast</strong> were among
+    the columns with the highest number of missing values.
+</p>
+
+
+<!-- 2 STRUCTURE -->
+
+<h2>2. Structure</h2>
+
+<p>
+    The Structure stage focused on understanding and organizing
+    the columns and data types in the dataset.
+</p>
+
+<p>
+    The dataset structure was examined using <code>df.info()</code>
+    and <code>df.dtypes</code>. The column names were also reviewed
+    to ensure they were clear and consistent.
+</p>
+
+<p>
+    The dataset contained information such as show ID, type,
+    title, director, cast, country, date added, release year,
+    rating, duration, genres and description.
+</p>
+
+
+<!-- 3 CLEANING -->
+
+<h2>3. Cleaning</h2>
+
+<p>
+    The Cleaning stage focused on addressing data-quality issues
+    identified during Discovery and Structure.
+</p>
+
+<p>
+    Missing values in selected columns were handled by replacing
+    them with <strong>"Unknown"</strong>. This allowed the records
+    to be retained while clearly indicating unavailable information.
+</p>
+
+<p>
+    Duplicate records were also checked and removed where
+    necessary.
+</p>
+
+<p>
+    Column names were standardized by removing unnecessary spaces,
+    converting them to lowercase and replacing spaces with
+    underscores.
+</p>
+
+
+<!-- 4 ENRICHING -->
+
+<h2>4. Enriching</h2>
+
+<p>
+    The Enriching stage focused on improving the usefulness of
+    the dataset by preparing existing information for further
+    analysis.
+</p>
+
+<p>
+    The categorical variables were examined using functions such
+    as <code>unique()</code> and <code>value_counts()</code> to
+    understand the different categories present in the dataset.
+</p>
+
+<p>
+    Data fields were reviewed to ensure that they could support
+    future analysis and visualization.
+</p>
+
+<p>
+    No external dataset was added because the project was based
+    on a single Netflix dataset.
+</p>
+
+
+<!-- 5 VALIDATING -->
+
+<h2>5. Validating</h2>
+
+<p>
+    The Validating stage was used to confirm that the data-cleaning
+    and transformation steps had been successfully completed.
+</p>
+
+<p>
+    Missing values were checked again using
+    <code>df.isnull().sum()</code>.
+</p>
+
+<p>
+    Duplicate records were checked using
+    <code>df.duplicated().sum()</code>.
+</p>
+
+<p>
+    The dataset structure and data types were also reviewed again
+    using <code>df.info()</code>.
+</p>
+
+<p>
+    These checks helped confirm that the main data-quality issues
+    identified during Discovery had been addressed.
+</p>
+
+
+<!-- 6 PUBLISHING -->
+
+<h2>6. Publishing</h2>
+
+<p>
+    After completing the data-wrangling process, the cleaned
+    dataset was exported as a CSV file.
+</p>
+
+<p>
+    <strong>File name:</strong>
+    netflix_cleaned_data.csv
+</p>
+
+<p>
+    The completed notebook was saved on Kaggle, and the cleaned
+    dataset was prepared for future analysis and visualization.
+</p>
+
+
+<!-- RESULTS -->
+
+<h2>Results & Interpretation</h2>
+
+<p>
+    The data-wrangling process improved the quality and
+    consistency of the Netflix dataset. Missing values,
+    duplicate records and formatting issues were identified
+    and addressed.
+</p>
+
+<p>
+    The final dataset is more organized and suitable for
+    further data analysis and visualization.
+</p>
+
+
+
+
+
+<!-- KAGGLE -->
+
+<h2>Kaggle Notebook</h2>
+
+<p>
+    View the complete notebook containing the Python code
+    and data-wrangling process:
+</p>
+
+<div class="kaggle-link-box">
+
+    <a href="https://www.kaggle.com/code/eglamaiyo/notebook3349dd38fa"
+       target="_blank"
+       class="kaggle-button">
+
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        View Kaggle Notebook
+
+    </a>
+
+</div>
+
+
+<!-- CONCLUSION -->
+
+<h2>Conclusion</h2>
+
+<p>
+    This project demonstrated the six main stages of data
+    wrangling: Discovery, Structure, Cleaning, Enriching,
+    Validating and Publishing.
+</p>
+
+<p>
+    The Netflix dataset was explored to understand its
+    characteristics and identify data-quality issues. The
+    dataset was then structured and cleaned, relevant fields
+    were examined for enrichment, and validation checks were
+    performed to confirm the quality of the final data.
+</p>
+
+<p>
+    The cleaned dataset was finally published as
+    <strong>cleaned_netflix_data.csv</strong> and is ready
+    for further analysis and visualization.
+</p>
+```
+
+</section>
+
+<footer>
+
+```
+<p>
+    © 2026 Egla Chepkurgat. All Rights Reserved.
+</p>
+```
+
+</footer>
+
+</body>
+
+</html>
