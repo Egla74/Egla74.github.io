@@ -173,3 +173,4 @@ revealElements.forEach(element => {
     observer.observe(element);
 
 });
+

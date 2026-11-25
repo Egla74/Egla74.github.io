@@ -1181,3 +1181,12 @@ button {
 
     box-shadow: 0 15px 30px rgba(34, 211, 238, 0.25);
 }
+.profile-photo {
+    width: 280px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
